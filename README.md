@@ -1,0 +1,2 @@
+# ticaret
+# ticaret
