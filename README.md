@@ -1,8 +1,1 @@
-# ticaret
-# ticaret
-# ticaret
-# ticaret
-# ticaret
-# ticaret
-# ticaret
-# ticaret
+# Php,jquery ve ajax uygulanarak geliştirilmiş örnek bir uygulama.
