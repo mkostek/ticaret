@@ -146,11 +146,11 @@ include "bag.php";
 <?php
 $sql = "SELECT * FROM  kategori";
 $result = $conn->query($sql);
-echo 'kategori seciniz:<select name="kategori" id="kategori" onchange="showFirma()">';
+echo 'kategori seciniz:<select name="kategori" id="kategori" onclick="showFirma()">';
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {  
-		echo	"<option value=".$row["kategoriID"].">".$row["kategoriAd"]."</option>";
+		echo	"<option selected value=".$row["kategoriID"].">".$row["kategoriAd"]."</option>";
     }
 } 
     echo "</select><br>";
@@ -161,7 +161,7 @@ echo 'firmayi seciniz:<select name="firma" id="firma" onclick="showUrun()">';
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {  
-		echo	"<option value=".$row["firmaID"].">".$row["firmaAd"]."</option>";
+		echo	"<option selected value=".$row["firmaID"].">".$row["firmaAd"]."</option>";
     }	
 } 
     echo "</select><br>";	
@@ -172,7 +172,7 @@ echo 'urun seciniz:<select name="urun" id="urun" onclick="showHint()">';
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {  
-		echo	"<option value=".$row["urunID"].">".$row["urunAd"]."</option>";
+		echo	"<option select value=".$row["urunID"].">".$row["urunAd"]."</option>";
     }
 } 
     echo "</select><br>";		
